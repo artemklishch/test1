@@ -2,7 +2,8 @@ import { useState, useRef } from "react";
 import "./SelfRender.css";
 
 const SelfRender = () => {
-  const [_, makeForceRender] = useState();
+  // eslint-disable-next-line no-unused-vars
+  const [obj, makeForceRender] = useState();
   const onMakeRerender = () => makeForceRender({});
   const num = useRef(-1);
   const onShowRendersNumber = () => {
